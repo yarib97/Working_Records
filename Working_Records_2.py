@@ -67,5 +67,6 @@ for text in legend.get_texts():
     plt.setp(text)
 plt.show()
 
+
 # Saving figure
 # plt.savefig('2022_spending.jpg')
