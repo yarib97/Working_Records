@@ -7,7 +7,7 @@ import seaborn as sns
 sns.set(palette='Dark2')
 
 # Importing excel file sheet into pandas data frame
-wr = pd.read_excel('Working Records.xlsx', sheet_name='Sample')
+wr = pd.read_excel('D:\Python_Files\Working_Records\Working Records.xlsx', sheet_name='Sample')
 
 # Create data frame with only the columns 'Month', 'Type' and 'Amount'
 df = pd.DataFrame(wr,columns=['Year','Month','Type','Amount'])
