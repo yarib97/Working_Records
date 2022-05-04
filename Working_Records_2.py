@@ -1,3 +1,4 @@
+from sys import path_hooks
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,7 +8,8 @@ import seaborn as sns
 sns.set(palette='Dark2')
 
 # Importing excel file sheet into pandas data frame
-wr = pd.read_excel('D:\Python_Files\Working_Records\Working Records.xlsx', sheet_name='Sample')
+path_file = 'D:\Python_Files\Working_Records\Working Records.xlsx'
+wr = pd.read_excel(path_file, sheet_name='Sample')
 
 # Create data frame with only the columns 'Month', 'Type' and 'Amount'
 df = pd.DataFrame(wr,columns=['Year','Month','Type','Amount'])
