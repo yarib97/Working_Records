@@ -1,4 +1,3 @@
-from sys import path_hooks
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -68,7 +67,6 @@ legend = plt.legend(set([x for x in table['Type']]))
 for text in legend.get_texts():
     plt.setp(text)
 plt.show()
-
 
 # Saving figure
 # plt.savefig('2022_spending.jpg')
