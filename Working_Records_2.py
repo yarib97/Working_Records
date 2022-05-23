@@ -8,7 +8,7 @@ sns.set(palette='Dark2')
 
 # Importing excel file sheet into pandas data frame
 path_file = 'D:\Python_Files\Working_Records\Working Records.xlsx'
-wr = pd.read_excel(path_file, sheet_name='Sample')
+wr = pd.read_excel(path_file, sheet_name='Spending')
 
 # Create data frame with only the columns 'Month', 'Type' and 'Amount'
 df = pd.DataFrame(wr,columns=['Year','Month','Type','Amount'])
